@@ -1,0 +1,239 @@
+{
+	"info": {
+		"_postman_id": "535eaa9b-c2f9-4fd7-a82e-0216b9c364e4",
+		"name": "API_LPBD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "listar predios",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3002/predios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"predios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Adicionar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\" : \"Predio 10\", \n    \"descricao\" : \"Predio novo\", \n    \"sigla\" : \"P10\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/predios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"predios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "atualizar predio",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n        \"codigo\": 9,\n        \"nome\": \"Predio 9\",\n        \"descricao\": \"Predio atualizado 9\",\n        \"sigla\": \"P9\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/predios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"predios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete predio",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3002/predios/13",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"predios",
+						"13"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listar predio por codigo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3002/predios/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"predios",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET salas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3002/salas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"salas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ADD Sala",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n        \"numero\": 301,\n        \"descricao\": \"Sala de aula\",\n        \"capacidade\": 12,\n        \"predio\": 4\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/salas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"salas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update sala",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"codigo\": 3,\n        \"numero\": 309,\n        \"descricao\": \"Sala de aula\",\n        \"capacidade\": 12,\n        \"predio\": 4\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/salas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"salas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete sala",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3002/salas/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"salas",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get sala por codigo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3002/salas/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"salas",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
